@@ -1,0 +1,69 @@
+<div class="box-container container">
+    <div class="banner">My Profile</div>
+    <div class="row">
+        <div class="col-md-2">
+            <img class="profile-img" src="../assets/images/person.jpg" alt="Loading...">
+        </div>
+
+        <div class="col-md-10 course-height">
+            <div class="row">
+                <div class="col-md-4 align-field">
+                    <label>Display Name</label>
+                    <input class="input-filed h-30" type="text" placeholder="Add placeholder Name"/>
+                </div>
+
+                <div class="col-md-4 align-field">
+                    <label>First Name</label>
+                    <input class="input-filed h-30" type="text" placeholder="Add placeholder Name"/>
+                </div>
+
+                <div class="col-md-4 align-field">
+                    <label>Last Name</label>
+                    <input class="input-filed h-30" type="text" placeholder="Add placeholder Name"/>
+                </div>
+            </div>
+
+            <div class="col-md-8 align-field">
+                <label>About Youself</label>
+                <textarea class="input-filed" placeholder="Add placeholder Name"></textarea>
+            </div>
+
+            <div class="col-md-4 align-field">
+                <label>Your Area of Interest</label>
+                <textarea class="input-filed" placeholder="Add placeholder Name"></textarea>
+            </div>
+
+            <div class="col-md-4 align-field">
+                <label>Your Area of Interest</label>
+                <div class="d-flex">
+                    <input type="checkbox" id="designer" name="designer" value="designer">
+                    <label class="pl-5" for="designer">Designer</label>
+                </div>
+               <div class="d-flex">
+                    <input type="checkbox" id="developer" name="developer" value="developer">
+                    <label class="pl-5" for="developer">Developer</label>
+               </div>
+               <div class="d-flex">
+                    <input type="checkbox" id="projectManager" name="projectManager" value="projectManager">
+                    <label class="pl-5" for="projectManager">Project Manager</label>
+                </div>
+                <div class="d-flex">
+                    <input type="checkbox" id="sales" name="sales" value="sales">
+                    <label class="pl-5" for="sales">Sales</label>
+                </div>
+            </div>
+
+            <div class="col-md-4 align-field">
+                <label>Are you a student or Professional</label>
+                <div class="d-flex">
+                    <input type="radio" id="stud" name="category" value="stud" (change)="handleChange($event)">
+                    <label class="pl-5" for="student">Student</label>
+                </div>
+               <div class="d-flex">
+                    <input type="radio" id="prof" name="category" value="prof" (change)="handleChange($event)">
+                    <label class="pl-5" for="professional">Professional</label>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>

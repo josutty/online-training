@@ -1,0 +1,41 @@
+.course-height {
+    height: calc(100vh - 155px);
+    overflow: auto;
+    border-left: 1px solid #d8d4d4;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.profile-img {
+    height: 150px;
+    width: 150px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.align-field {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+
+    label {
+        padding-bottom: 5px;
+        font-size: 10px;
+    }
+
+    .h-30 {
+        height: 30px;
+    }
+
+    .input-filed {
+        border: none;
+        background: #F7F8FF;
+        padding: 10px;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    .pl-5 {
+        padding-left: 5px;
+    }
+}
