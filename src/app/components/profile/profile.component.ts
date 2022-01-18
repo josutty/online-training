@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
+  experiencedCandidate: boolean = false;
 
   constructor() { }
 
@@ -14,6 +15,11 @@ export class ProfileComponent implements OnInit {
 
   handleChange(evt:any) {
     var target = evt.target.value;
+    if(target == 'prof') {
+      this.experiencedCandidate = true;
+    } else {
+      this.experiencedCandidate = false;
+    }
     console.log(target)
   }
 

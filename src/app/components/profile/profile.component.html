@@ -40,7 +40,7 @@
                     <label class="pl-5" for="designer">Designer</label>
                 </div>
                <div class="d-flex">
-                    <input type="checkbox" id="developer" name="developer" value="developer">
+                    <input type="checkbox" id="developer" name="developer" value="developer" checked>
                     <label class="pl-5" for="developer">Developer</label>
                </div>
                <div class="d-flex">
@@ -56,7 +56,7 @@
             <div class="col-md-4 align-field">
                 <label>Are you a student or Professional</label>
                 <div class="d-flex">
-                    <input type="radio" id="stud" name="category" value="stud" (change)="handleChange($event)">
+                    <input type="radio" id="stud" name="category" value="stud" (change)="handleChange($event)" checked>
                     <label class="pl-5" for="student">Student</label>
                 </div>
                <div class="d-flex">
@@ -64,6 +64,46 @@
                     <label class="pl-5" for="professional">Professional</label>
                </div>
             </div>
+
+            <div *ngIf="experiencedCandidate" class="exp-candidate">
+                <div class="col-md-4 align-field">
+                    <label>How much experience you have</label>
+                    <div class="d-flex">
+                        <input type="radio" id="intern" name="expLevel" value="intern">
+                        <label class="pl-5" for="intern">0-5</label>
+    
+                        <input  class="ml-20" type="radio" id="exp" name="expLevel" value="exp" checked>
+                        <label class="pl-5" for="exp">5-10</label>
+    
+                        <input  class="ml-20" type="radio" id="manager" name="expLevel" value="manager">
+                        <label class="pl-5" for="exp">10 & Above</label>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 align-field">
+                    <label>What is your expertise</label>
+                    <div class="d-flex">
+                        <input type="radio" id="java" name="expertise" value="java">
+                        <label class="pl-5" for="java">Java</label>
+    
+                        <input  class="ml-20" type="radio" id="react" name="expertise" value="react" checked>
+                        <label class="pl-5" for="react">React</label>
+    
+                        <input  class="ml-20" type="radio" id="backend" name="expertise" value="backend">
+                        <label class="pl-5" for="backend">Backend</label>
+                    </div>
+                </div>
+
+                <div class="col-md-8 align-field">
+                    <label>Mention your role</label>
+                    <textarea class="input-filed" placeholder="Add placeholder"></textarea>
+                </div>
+            </div>
+
+            <div class="add-cart">
+                <input class="add-cart-btn" type="button" value="SAVE" name="SAVE"/>
+            </div>
+
         </div>
     </div>
 </div>

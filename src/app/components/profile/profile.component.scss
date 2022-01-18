@@ -36,6 +36,35 @@
     }
 
     .pl-5 {
-        padding-left: 5px;
+        padding-left: 10px;
+    }
+
+    
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.exp-candidate {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.add-cart {
+    text-align: end;
+    padding-top: 20px;
+
+    .add-cart-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 0.875em;
+        background: #FF6738;
+        border-radius: 2px;
+        height: 25px;
+        padding: 5px;
     }
 }
